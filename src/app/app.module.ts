@@ -7,6 +7,13 @@ import { ItemComponent } from './unoptimalized-items-list/item/item.component';
 import { UnoptimalizedItemsListComponent } from './unoptimalized-items-list/unoptimalized-items-list.component';
 import { FormsModule } from '@angular/forms';
 import { MainPageComponent } from './main-page/main-page.component';
+import { CheckPermissionDirective } from './directives/check-permission.directive';
+import { ColorChangeDirective } from './directives/color-change.directive';
+import { SimpleCheckPermissionDirective } from './directives/simple-check-permission.directive';
+import { FullStockPipe } from './pipes/full-stock.pipe';
+import { LowPricePipe } from './pipes/low-price.pipe';
+import { TextGeneratorPipe } from './pipes/text-generator.pipe';
+import { UpperCaseByLastIndxPipe } from './pipes/upper-case-by-last-indx.pipe';
 
 
 @NgModule({
@@ -14,7 +21,14 @@ import { MainPageComponent } from './main-page/main-page.component';
     AppComponent,
     MainPageComponent,
     ItemComponent,
-    UnoptimalizedItemsListComponent
+    UnoptimalizedItemsListComponent,
+    LowPricePipe,
+    FullStockPipe,
+    UpperCaseByLastIndxPipe,
+    TextGeneratorPipe,
+    SimpleCheckPermissionDirective,
+    CheckPermissionDirective,
+    ColorChangeDirective
   ],
   imports: [
     BrowserModule,
